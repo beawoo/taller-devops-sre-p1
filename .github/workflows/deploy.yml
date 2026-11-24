@@ -35,7 +35,7 @@ jobs:
           host: ${{secrets.IP_PUBLICA}}
           username: ${{secrets.USERNAME}}
           key: ${{secrets.KEY}}
-          source: .
+          source: "app.py,profile.json,requirements.txt,Dockerfile,compose.yaml,.dockerignore,templates,static"
           target: "/home/${{secrets.USERNAME}}/proyecto1"
           overwrite: true
 
